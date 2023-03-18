@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Noto+Sans:wght@200&family=Oswald:wght@300&family=Poppins:ital,wght@0,200;1,200&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(36, 23, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 23, 0, 1) 0%,
+    rgba(92, 139, 36, 0.938813025210084) 41%,
+    rgba(104, 255, 0, 1) 100%
+  );
+}
+h1 {
+  color: bisque;
+  text-align: center;
+  text-shadow: 2px 1px 1px rgb(98, 98, 224);
+  margin-right: 7%;
+  color: rgb(31, 31, 160);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.input1 {
+  border-style: double;
+  border-color: bisque;
+  border-radius: 15px;
+  height: 50px;
+  padding-left: 20px;
+  margin-left: 33%;
+  margin-right: 40%;
+  background: rgb(0, 17, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 17, 36, 1) 0%,
+    rgba(36, 85, 139, 1) 41%,
+    rgba(0, 129, 255, 1) 100%
+  );
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: blanchedalmond;
+  font-family: "Roboto", sans-serif;
+}
+.input2 {
+  border-style: double;
+  border-color: bisque;
+  height: 50px;
+  background: rgb(0, 17, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 17, 36, 1) 0%,
+    rgba(36, 85, 139, 1) 41%,
+    rgba(0, 129, 255, 1) 100%
+  );
+  border-radius: 15px;
+  margin-left: 33%;
+  margin-right: 40%;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: blanchedalmond;
+  font-family: "Roboto", sans-serif;
+}
+.input3 {
+  border-style: double;
+  border-color: bisque;
+  margin-left: 33%;
+  border-radius: 15px;
+  margin-right: 40%;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  height: 50px;
+  background: rgb(0, 17, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 17, 36, 1) 0%,
+    rgba(36, 85, 139, 1) 41%,
+    rgba(0, 129, 255, 1) 100%
+  );
+  color: blanchedalmond;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.input4 {
+  border-style: double;
+  border-color: bisque;
+  margin-left: 33%;
+  margin-right: 40%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  height: 50px;
+  padding-left: 10px;
+  background: rgb(0, 17, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 17, 36, 1) 0%,
+    rgba(36, 85, 139, 1) 41%,
+    rgba(0, 129, 255, 1) 100%
+  );
+  font-size: 20px;
+  color: blanchedalmond;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+}
+.input1 input:hover {
+  transform: scale(1.06);
+}
+.input2 input:hover {
+  transform: scale(1.06);
+}
+.input3 input:hover {
+  transform: scale(1.06);
+}
+.input4 input:hover {
+  transform: scale(1.06);
+}

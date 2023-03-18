@@ -5,79 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter</title>
-    <style>
-
- h1{
-    color: bisque;
-    text-align: center;
-    text-shadow: 2px 1px 1px rgb(98, 98, 224);
-    margin-right: 7%;
-    color: rgb(31, 31, 160);
-    font-family: sans-serif;
-    text-decoration: underline;
-   }
-
-.input1{
-    border-style: double;
-    border-color: bisque;
-    border-radius: 15px;
-    height: 50px;
-    padding-left: 20px;
-    margin-left: 33%;
-    margin-right: 40%;
-    background-color: rgb(30, 55, 78);
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: blanchedalmond;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.input2{
-   
-    border-style: double;
-    border-color: bisque;
-    height: 50px;
-    background-color: rgb(30, 55, 78);
-    border-radius: 15px;
-    margin-left: 33%;
-    margin-right: 40%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: blanchedalmond;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.input3{
-    border-style: double;
-    border-color: bisque;
-    margin-left: 33%;
-    border-radius: 15px;
-    margin-right: 40%;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    height: 50px;
-    background-color: rgb(30, 55, 78);
-    color: blanchedalmond;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.input4{
-    border-style: double;
-    border-color: bisque;
-    margin-left: 33%;
-    margin-right: 40%;
-     border-radius: 15px;
-    margin-bottom: 10px;
-    height: 50px;
-    padding-left: 10px;
-    background-color: rgb(30, 55, 78);
-    font-size: 20px;
-    color: blanchedalmond;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Converter</h1>
-    <div id ="container">
+    <div class ="container">
         <div class="input1">
             <label>Meter</label>
             <input type="number" value="1" id="mtr" class="inp1" style="margin-left: 42px; margin-top: 13px; ">
@@ -95,62 +27,6 @@
             <input type="number" value="0.001" id="km" class="inp" style=" margin-top: 13px; margin-left: 12px">
         </div>
     </div>
-    <script>
-        let met = document.getElementById('mtr');
-        let cent = document.getElementById('cen');
-        let yar = document.getElementById('yard');
-        let kilo = document.getElementById('km');
-
-        
-cent.addEventListener('input',function(){
-            let mete = this.value;
-            let km = this.value;
-            let yr = this.value;
-            let yrd = yr*0.010936;
-            let kem = km/100000;
-            let m = mete/100;
-            met.value = m;
-            yar.value = yrd;
-            kilo.value = kem;
-});
-met.addEventListener('input',function(){
-
-    //console.log("lpuyt")
-        let cen = this.value;
-        let km = this.value;
-        let yr = this.value;
-        let kem = km/1000;
-        let yrd = yr*1.0936;
-        let c = cen*100;
-       cent.value = c;
-       kilo.value = kem;
-       yar.value = yrd;
-    });
-yar.addEventListener('input',function(){
-//console.log("lpuyt")
-    let mtr = this.value;
-    let cmm = this.value;
-    let kmi = this.value;
-    let c = cmm/0.010936;
-    let mt = mtr/1.0936;
-    let km = kmi/1093.6;
-    met.value = mt;
-    kilo.value = km;
-    cent.value = c;
-});
- kilo.addEventListener('input',function(){
-//console.log("lpuyt")
-    let mtr = this.value;
-    let cmm = this.value;
-    let yr = this.value;
-    let c = cmm*100000
-    let mt = mtr*1000
-    let yrd = yr*1093.6
-    cent.value = c;
-    met.value = mt;
-    yar.value = yrd;
-
-});
-    </script>
+    <script  src="script.js" ></script>  
 </body>
 </html>
